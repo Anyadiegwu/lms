@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:5173', 
+  origin: 'https://lms-silk-phi.vercel.app', 
   credentials: true,
 }));
 app.use(express.json());
@@ -21,7 +21,7 @@ app.get('/api/test', (req, res) => {
   res.json({ message: 'Backend is alive and routes are mounted!' });
 });
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`🚀 Backend running on http://localhost:${PORT}`);
+  console.log(`🚀 Backend running on https://lms-4nir.onrender.com`);
 });
