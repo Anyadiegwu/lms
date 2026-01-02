@@ -1,0 +1,231 @@
+.dashboard {
+  margin-left: 256px;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.dashboard-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+.header-inner h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header-inner p {
+  color: #6b7280;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-text {
+  text-align: right;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.user-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #4f46e5;
+  object-fit: cover;
+}
+
+.dashboard-main {
+  padding: 32px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.stat-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.stat-value {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.stat-icon {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.stat-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.stat-icon-indigo {
+  background: #e0e7ff;
+  color: #4f46e5;
+}
+
+.stat-icon-green {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.stat-icon-purple {
+  background: #f3e8ff;
+  color: #7c3aed;
+}
+
+.stat-icon-orange {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.courses,
+.activity {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.course-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.course-header p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.progress-value {
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+.progress-bar {
+  background: #e5e7eb;
+  height: 8px;
+  border-radius: 999px;
+}
+
+.progress-fill {
+  height: 8px;
+  background: #4f46e5;
+  border-radius: 999px;
+}
+
+.primary-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  background: #4f46e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #4338ca;
+}
+
+.outline-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.activity-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.activity-icon {
+  width: 40px;
+  height: 40px;
+  background: #e0e7ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f46e5;
+}
+
+.highlight {
+  color: #4f46e5;
+}
+
+.activity small {
+  color: #6b7280;
+}
+@media (max-width: 768px) {
+  .dashboard {
+    margin: 30px 0 0;
+  }
+}
