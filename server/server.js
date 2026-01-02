@@ -21,7 +21,8 @@ app.get('/api/test', (req, res) => {
   res.json({ message: 'Backend is alive and routes are mounted!' });
 });
 
-// const PORT = process.env.PORT || 5000;
-app.listen( () => {
-  console.log(`🚀 Backend running on https://lms-4nir.onrender.com`);
+const PORT = process.env.PORT || 3000; 
+
+app.listen(PORT, () => {
+  console.log(`🚀 Backend running on port ${PORT}`);
 });
