@@ -22,6 +22,6 @@ app.get('/api/test', (req, res) => {
 });
 
 // const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen( () => {
   console.log(`🚀 Backend running on https://lms-4nir.onrender.com`);
 });
